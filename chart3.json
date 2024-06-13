@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Pakistan Debt",
+    "subtitle": ["Ratio, %GDP", "Source: PBS (WB) via ECO-API"]
+  },
+
+  "width": 400,
+  "height": 300,
+
+  "data": {"url": "https://api.economicsobservatory.com/pak/debt?vega"},
+
+  "mark": {
+    "type": "line",
+    "color": "blueviolet"},
+
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative", "title":null}
+  }
+}
